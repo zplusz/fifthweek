@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex">
+    <div class="sider">
+    <a class="logo d-block" href="assignment.html">
+      <h1 class=" hide-text">ANSWER</h1>
+    </a>
+      <ul class="list-unstyled font-weight-bold">
+        <li>
+          <a class="d-flex" href="">
+            <i class="material-icons icon">
+              assessment
+            </i>
+            <p class="font-1">Dashboard</p>
+          </a>
+        </li>
+        <li >
+          <a class="d-flex" href="">
+            <i class="material-icons icon">
+              question_answer
+            </i>
+            <p class="font-1">Question</p>
+          </a>
+        </li>
+        <li >
+          <a class="d-flex" href="assignment.html">
+            <i class="material-icons icon">
+              assignment
+            </i>
+            <p class="font-1">Assignment</p>
+          </a>
+        </li>
+        <li >
+          <a class="d-flex" href="">
+            <i class="material-icons icon">
+              video_library
+            </i>
+            <p class="font-1">Course</p>
+          </a>
+        </li>
+        <li >
+          <a class="d-flex" href="admin.html">
+            <i class="material-icons icon">
+              supervisor_account
+            </i>
+            <p class="font-1">Admin</p>
+          </a>
+        </li>
+        <li >
+          <a class="d-flex" href="">
+            <i class="material-icons icon">
+              settings
+            </i>
+            <p class="font-1">Settings</p>
+          </a>
+        </li>
+      </ul> 
+      <section class="user d-flex">
+        <img class="userPic bg-cover mr-3" src="./assets/images/andychen.jpeg" alt="">
+        <p class="userName font-1">Andy Chen  <br>
+          <span class="userEmail">andy0401@mail.com</span> 
+        </p>
+      </section>
+          
+      
+    </div>
+    <div class="container-fluid">
+      <div class="pl-4 pr-4">
+<nav class="nav d-flex justify-content-between align-items-center mb-3">
+  <div class="d-flex">
+    <h2 class="p-2 bd-highlight assignmentTitle">Assignment</h2>
+    <div class="mt-1">
+      <a class="btn d-flex align-items-center font-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Courses
+        <i class="material-icons ml-2 color-primary">keyboard_arrow_down</i>
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 41px, 0px);">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div> 
+  <div class="mt-1">
+      <i class="material-icons icon-search">
+           search
+      </i>
+      <i class="material-icons">
+           notifications_active
+      </i>
+  </div>
+</nav>
+<div class="d-flex justify-content-between">
+  <div class="dropdown">
+    <a class="btn d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      All(4)
+      <i class="material-icons ml-2 color-primary">keyboard_arrow_down</i>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 41px, 0px);">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
+  <div class="text-muted font-2">2 comments</div>
+</div>
+<div class="row ">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+        <ul class="d-flex justify-content-between list-unstyled">
+          <li class="font-2">
+            <ul class="list-unstyled">
+              <li class="font-2">Chapter Assignment 2</li>
+              <li class="font-1 font-weight-bold">Please check this file…</li>
+            </ul>
+          </li>
+          <li class="font-2">
+            <ul class="list-unstyled text-right">
+              <li class="font-2">4 hrs ago</li>
+              <li class="font-2 text-muted">Emily Wang</li>
+            </ul>
+          </li>
+        </ul>
+      </a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+        <ul class="d-flex justify-content-between list-unstyled">
+          <li class="font-2">
+            <ul class="list-unstyled">
+              <li class="font-2">Chapter Assignment 1</li>
+              <li class="font-1 font-weight-bold">My Homework</li>
+            </ul>
+          </li>
+          <li class="font-2">
+            <ul class="list-unstyled text-right">
+              <li class="font-2">12 hrs ago</li>
+              <li class="font-2 text-muted">David Xu</li>
+            </ul>
+          </li>
+        </ul>
+      </a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+        <ul class="d-flex justify-content-between list-unstyled">
+          <li class="font-2">
+            <ul class="list-unstyled">
+              <li class="font-2">Final Assignment</li>
+              <li class="font-1 font-weight-bold">Have a problem with this…</li>
+            </ul>
+          </li>
+          <li class="font-2">
+            <ul class="list-unstyled text-right">
+              <li class="font-2">18 hrs ago</li>
+              <li class="font-2 text-muted">Tony Wei</li>
+            </ul>
+          </li>
+        </ul>
+      </a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+        <ul class="d-flex justify-content-between list-unstyled">
+          <li class="font-2">
+            <ul class="list-unstyled">
+              <li class="font-2">Final Assignment</li>
+              <li class="font-1 font-weight-bold">Did I do it right?</li>
+            </ul>
+          </li>
+          <li class="font-2">
+            <ul class="list-unstyled text-right">
+              <li class="font-2">19 hrs ago</li>
+              <li class="font-2 text-muted">Christina Lin</li>
+            </ul>
+          </li>
+        </ul>
+      </a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content " id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <ul class="list-unstyled">
+              <li class="font-2">Chapter Assignment 2 / HTML&CSS</li>
+              <li class="font-1 font-weight-bold">Please check this file for me, thanks!</li>
+            </ul>
+            <i class="material-icons">
+              more_vert
+            </i>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="userPic bg-cover mr-2" src="./assets/images/emilywang.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <ul class="list-unstyled mb-2">
+                    <li class="font-1 font-weight-bold">Emily Wang</li>
+                    <li class="font-2 text-muted">10:38 AM (4 hours ago)</li>
+                  </ul>
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in 
+                  the following code the height of the <code class="bg-secondary text-primary">div</code>  is bigger than the height of the img ? There is a gap 
+                  below the <code class="bg-secondary text-primary">img</code>, but it doesn’t seems to be a padding/margin. <br>
+                  What is the gap or extra space below image?<br>
+                  <button type="button" class="btn btn-secondary border-thirdary btn-lg mt-3 font-1 font-weight-bold d-flex">
+                    <i class="material-icons mr-1">
+                      attach_file
+                    </i>
+                    HW-2-David.zip
+                  </button>
+                </div>
+              </li>
+              <hr class="ml-5">
+              <li class="media my-4">
+                <img class="userPic bg-cover mr-2" src="./assets/images/andychen.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <ul class="list-unstyled mb-2">
+                      <li class="font-1 font-weight-bold">Andy Chen (You)</li>
+                      <li class="font-2 text-muted">13:24 AM (1 hours ago)</li>
+                    </ul>
+                  <div>
+                    <i class="material-icons mr-3">
+                    star_border
+                  </i>
+                  <i class="material-icons">
+                    edit
+                  </i>
+                  </div>
+                  </div>
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below 
+                  that line for the descenders you find on letters like g, j, p and q. 
+                  <br>
+                  <br>
+                  You can: 　
+                  <br>
+                  <br>
+                  <ul class="list-type">
+                    <li>adjust the <code class="bg-secondary text-primary">vertical-align</code>  of the image to position it elsewhere (e.g. the <code class="bg-secondary text-primary">middle</code> ) or</li>
+                    <li>change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.</li>
+                  </ul>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <ul class="list-unstyled">
+              <li class="font-2">Chapter Assignment 2 / HTML&CSS</li>
+              <li class="font-1 font-weight-bold">My Homework</li>
+            </ul>
+            <i class="material-icons">
+              more_vert
+            </i>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="userPic bg-cover mr-2" src="./assets/images/emilywang.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <ul class="list-unstyled mb-2">
+                    <li class="font-1 font-weight-bold">Emily Wang</li>
+                    <li class="font-2 text-muted">10:38 AM (4 hours ago)</li>
+                  </ul>
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in 
+                  the following code the height of the <code class="bg-secondary text-primary">div</code>  is bigger than the height of the img ? There is a gap 
+                  below the <code class="bg-secondary text-primary">img</code>, but it doesn’t seems to be a padding/margin. <br>
+                  What is the gap or extra space below image?<br>
+                  <button type="button" class="btn btn-secondary border-thirdary btn-lg mt-3 font-1 font-weight-bold d-flex">
+                    <i class="material-icons mr-1">
+                      attach_file
+                    </i>
+                    HW-2-David.zip
+                  </button>
+                </div>
+              </li>
+              <hr class="ml-5">
+              <li class="media my-4">
+                <img class="userPic bg-cover mr-2" src="./assets/images/andychen.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <ul class="list-unstyled mb-2">
+                      <li class="font-1 font-weight-bold">Andy Chen (You)</li>
+                      <li class="font-2 text-muted">13:24 AM (1 hours ago)</li>
+                    </ul>
+                  <div>
+                    <i class="material-icons mr-3">
+                    star_border
+                  </i>
+                  <i class="material-icons">
+                    edit
+                  </i>
+                  </div>
+                  </div>
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below 
+                  that line for the descenders you find on letters like g, j, p and q. 
+                  <br>
+                  <br>
+                  You can: 　
+                  <br>
+                  <br>
+                  <ul class="list-type">
+                    <li>adjust the <code class="bg-secondary text-primary">vertical-align</code>  of the image to position it elsewhere (e.g. the <code class="bg-secondary text-primary">middle</code> ) or</li>
+                    <li>change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.</li>
+                  </ul>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <ul class="list-unstyled">
+              <li class="font-2">Chapter Assignment 2 / HTML&CSS</li>
+              <li class="font-1 font-weight-bold">Have a problem with this</li>
+            </ul>
+            <i class="material-icons">
+              more_vert
+            </i>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="userPic bg-cover mr-2" src="./assets/images/emilywang.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <ul class="list-unstyled mb-2">
+                    <li class="font-1 font-weight-bold">Emily Wang</li>
+                    <li class="font-2 text-muted">10:38 AM (4 hours ago)</li>
+                  </ul>
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in 
+                  the following code the height of the <code class="bg-secondary text-primary">div</code>  is bigger than the height of the img ? There is a gap 
+                  below the <code class="bg-secondary text-primary">img</code>, but it doesn’t seems to be a padding/margin. <br>
+                  What is the gap or extra space below image?<br>
+                  <button type="button" class="btn btn-secondary border-thirdary btn-lg mt-3 font-1 font-weight-bold d-flex">
+                    <i class="material-icons mr-1">
+                      attach_file
+                    </i>
+                    HW-2-David.zip
+                  </button>
+                </div>
+              </li>
+              <hr class="ml-5">
+              <li class="media my-4">
+                <img class="userPic bg-cover mr-2" src="./assets/images/andychen.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <ul class="list-unstyled mb-2">
+                      <li class="font-1 font-weight-bold">Andy Chen (You)</li>
+                      <li class="font-2 text-muted">13:24 AM (1 hours ago)</li>
+                    </ul>
+                  <div>
+                    <i class="material-icons mr-3">
+                    star_border
+                  </i>
+                  <i class="material-icons">
+                    edit
+                  </i>
+                  </div>
+                  </div>
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below 
+                  that line for the descenders you find on letters like g, j, p and q. 
+                  <br>
+                  <br>
+                  You can: 　
+                  <br>
+                  <br>
+                  <ul class="list-type">
+                    <li>adjust the <code class="bg-secondary text-primary">vertical-align</code>  of the image to position it elsewhere (e.g. the <code class="bg-secondary text-primary">middle</code> ) or</li>
+                    <li>change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.</li>
+                  </ul>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <ul class="list-unstyled">
+              <li class="font-2">Chapter Assignment 2 / HTML&CSS</li>
+              <li class="font-1 font-weight-bold">Did I do it right?</li>
+            </ul>
+            <i class="material-icons">
+              more_vert
+            </i>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="userPic bg-cover mr-2" src="./assets/images/emilywang.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <ul class="list-unstyled mb-2">
+                    <li class="font-1 font-weight-bold">Emily Wang</li>
+                    <li class="font-2 text-muted">10:38 AM (4 hours ago)</li>
+                  </ul>
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in 
+                  the following code the height of the <code class="bg-secondary text-primary">div</code>  is bigger than the height of the img ? There is a gap 
+                  below the <code class="bg-secondary text-primary">img</code>, but it doesn’t seems to be a padding/margin. <br>
+                  What is the gap or extra space below image?<br>
+                  <button type="button" class="btn btn-secondary border-thirdary btn-lg mt-3 font-1 font-weight-bold d-flex">
+                    <i class="material-icons mr-1">
+                      attach_file
+                    </i>
+                    HW-2-David.zip
+                  </button>
+                </div>
+              </li>
+              <hr class="ml-5">
+              <li class="media my-4">
+                <img class="userPic bg-cover mr-2" src="./assets/images/andychen.jpeg" class="mr-3" alt="...">
+                <div class="media-body font-3">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <ul class="list-unstyled mb-2">
+                      <li class="font-1 font-weight-bold">Andy Chen (You)</li>
+                      <li class="font-2 text-muted">13:24 AM (1 hours ago)</li>
+                    </ul>
+                  <div>
+                    <i class="material-icons mr-3">
+                    star_border
+                  </i>
+                  <i class="material-icons">
+                    edit
+                  </i>
+                  </div>
+                  </div>
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below 
+                  that line for the descenders you find on letters like g, j, p and q. 
+                  <br>
+                  <br>
+                  You can: 　
+                  <br>
+                  <br>
+                  <ul class="list-type">
+                    <li>adjust the <code class="bg-secondary text-primary">vertical-align</code>  of the image to position it elsewhere (e.g. the <code class="bg-secondary text-primary">middle</code> ) or</li>
+                    <li>change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-2 position-relative">
+      <div>
+        <a href="#" class="btn active" role="button" aria-pressed="true">
+          <i class="material-icons">
+            keyboard_arrow_left
+          </i>
+        </a>
+        <a href="#" class="btn active" role="button" aria-pressed="true">
+          <i class="material-icons">
+            keyboard_arrow_right
+          </i>
+        </a>
+      </div>
+      <div>
+        <button type="button" class="btn btn-outline-primary btn-mg mr-2">Mark as read</button>
+        <button type="button" class="btn btn-outline-primary btn-sg " id="reply-show">Reply</button> 
+      </div>
+    </div>
+    <div class="reply position-absolute" id="reply">
+      <div class="card">
+        <div class="card-header d-flex align-items-center">
+          <div class="dropdown mr-3">
+            <a class="btn dropdown-toggle font-weight-bold font-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Body Text
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 41px, 0px); top: 0px; left: 0px; will-change: transform;">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <a href="#" class="text-dark text-decoration-none d-flex  mr-3">
+            <span class="material-icons">
+              format_bold
+            </span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none d-flex  mr-3">
+            <span class="material-icons">
+              format_italic
+            </span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none d-flex  mr-3">
+            <span class="material-icons">
+              format_list_bulleted
+            </span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none d-flex  mr-3">
+            <span class="material-icons">
+              format_list_numbered
+            </span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none d-flex  mr-3">
+            <span class="material-icons">
+              photo
+            </span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none d-flex  mr-3">
+            <span class="material-icons">
+              link
+            </span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none d-flex mr-3">
+            <span class="material-icons">
+              code
+            </span>
+          </a>
+        </div>
+        <div class="card-body">
+          <textarea class="form-control font-1 text-muted border-0" id="exampleFormControlTextarea1" rows="6" placeholder="Reply an answer…"></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button  class="btn btn-outline-primary btn-mg  mr-2" data-dismiss="modal" id="cancel">Cancel</button>
+          <button type="button" class="btn btn-outline-primary btn-mg mr-2" type="submit">Reply</button>
+        </div>
+        
+      </div>
+
+    </div>
+         
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+  <script src="assets/js/all.js"></script>
+</body>
+</html>
