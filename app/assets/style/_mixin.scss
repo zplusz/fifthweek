@@ -1,0 +1,7 @@
+// 圓形
+@mixin circle ($size){
+    border-radius: 50%;
+    height: $size;
+    width: $size;
+}
+

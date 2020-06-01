@@ -1,0 +1,733 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+
+<nav class="nav d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex">
+      <h2 class="p-2 bd-highlight assignmentTitle">Admin</h2>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn d-flex align-items-center" data-toggle="modal" data-target="#exampleModalLong">
+        <span class="material-icons mr-2 text-primary">
+          add
+        </span> 
+        Add New Admin
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h5 class="modal-title" id="exampleModalLongTitle">New Admin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <p class="newadmin-title">Account</p>
+              <form>
+                <div class="form-group">
+                  <label for="name" class="account-content">Name</label>
+                  <input type="name" class="form-control newadmin-blocksize" id="name" >
+                </div>
+                <div class="form-group">
+                  <label for="email" class="account-content">Email</label>
+                  <input type="email" class="form-control newadmin-blocksize" id="email">
+                </div>
+              </form>
+              <hr class="bg-thirdary">
+              <p class="newadmin-title">Verification</p>
+              <p class="verification-content d-flex align-items-center">
+                <i class="material-icons mr-1 text-danger">
+                report_problem
+                </i>unverified
+              </p>
+              <button type="button" class="btn btn-outline-secondary btn-lg btn-block newadmin-blocksize text-primary">
+                Send Verification Mail
+              </button>
+              <hr class="bg-thirdary">
+              <p class="newadmin-title">Access Level</p>
+              <div class="dropdown newadmin-blocksize">
+                <a class="btn btn-block d-flex justify-content-between align-items-center text-muted accesslevel-content mt-1 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  -Choose access level- 
+                  <span class="material-icons">
+                    keyboard_arrow_down
+                  </span>
+                </a>
+                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <hr class="bg-thirdary">
+              <p class="newadmin-title">Custom Access</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Message
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  task menu
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer border-0">
+              <button type="button" class="btn btn-outline-success" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="mt-1">
+        <i class="material-icons icon-search">
+             search
+        </i>
+        <i class="material-icons">
+             notifications_active
+        </i>
+    </div>
+</nav>
+<table class="table mb-5">
+    <thead>
+      <tr>
+        <th scope="col" class="border-top-0">
+            <div class="d-flex align-items-center">
+                    ID
+                <i class="material-icons">
+                arrow_downward
+                </i>
+            </div>
+        </th>
+        <th scope="col border-top-0" class="border-top-0">Name</th>
+        <th scope="col" class="border-top-0">Last</th>
+        <th scope="col" class="border-top-0">Verified</th>
+        <th class="border-top-0"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#2</td>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#3</td>
+        <td>Mahima Lopez</td>
+        <td>Mahima.Lopez@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#4</td>
+        <td>Pharrell Murray</td>
+        <td>Pharrell.Murray@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#5</td>
+        <td>Annika Mcbride</td>
+        <td>Annika Mcbride@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#6</td>
+        <td>Fatimah Clark</td>
+        <td>Fatimah Clark@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#7</td>
+        <td>Klaudia Rhodes</td>
+        <td>Klaudia Rhodes@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#8</td>
+        <td>Tillie Lucero</td>
+        <td>Tillie Lucero@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#9</td>
+        <td>Sabrina Stephenson</td>
+        <td>Sabrina Stephenson@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">#10</td>
+        <td>Annie Smith</td>
+        <td>Annie Smith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <a type="button" class="mr-3" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="material-icons">
+                remove_red_eye
+            </i>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content adminview">
+                <div class="d-flex">
+                  <div class="mr-4">
+                    <img class="adminpic border" src="./assets/images/emir.jpeg" alt="">
+                  </div>
+                  <div class="adminview-items">
+                    <div class="d-flex justify-content-between number mb-1">
+                      <p class="font-1">#1</p>
+                      <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="material-icons">close</i>
+                      </a>
+                    </div>
+                    <ul class="text-left list-unstyled">
+                      <li class="font-1">Admin</li>
+                      <li class="name">Emir Wicks</li>
+                      <li class="text-muted mb-1">emir.wicks@mail.com</li>
+                      <li class="verified">verified</li>
+                    </ul>
+                    <div class="dropdown">
+                      <p>
+                        <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="material-icons text-success">
+                            expand_more
+                          </i>
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="d-flex justify-content-between align-items-center ">
+                          <a type="button" class="deactivate font-1" data-dismiss="modal"><p>Deactivate</p></a>
+                          <a type="button" class="edit"><p>Edit</p></a>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+            <i class="material-icons">
+                edit
+            </i>
+        </td>
+      </tr>
+    </tbody>
+</table>
+ <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav> 
