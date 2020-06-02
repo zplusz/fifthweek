@@ -2276,8 +2276,8 @@ pre code {
   background-color: #fff;
   border-color: #60cc96;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
-          box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -2788,8 +2788,8 @@ textarea.form-control {
 
 .btn:focus, .btn.focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
-          box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
 }
 
 .btn.disabled, .btn:disabled {
@@ -4164,8 +4164,8 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
-          box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
@@ -4382,8 +4382,8 @@ input[type="button"].btn-block {
 
 .custom-file-input:focus ~ .custom-file-label {
   border-color: #60cc96;
-  -webkit-box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
-          box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
 }
 
 .custom-file-input[disabled] ~ .custom-file-label,
@@ -4447,16 +4447,16 @@ input[type="button"].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 rgba(42, 131, 86, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 rgba(42, 131, 86, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 rgba(42, 131, 86, 0.25);
+  box-shadow: 0 0 0 1px #fff;
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 rgba(42, 131, 86, 0.25);
+  box-shadow: 0 0 0 1px #fff;
 }
 
 .custom-range::-moz-focus-outer {
@@ -5472,8 +5472,8 @@ input[type="button"].btn-block {
 .page-link:focus {
   z-index: 3;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
-          box-shadow: 0 0 0 rgba(42, 131, 86, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(42, 131, 86, 0.25);
 }
 
 .page-item:first-child .page-link {
@@ -10996,10 +10996,6 @@ img {
   height: auto;
 }
 
-.list-type {
-  list-style-type: disc;
-}
-
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11019,10 +11015,6 @@ img {
 .font-3 {
   font-size: 14px;
   line-height: 21px;
-}
-
-.text-normal {
-  color: black;
 }
 
 .hide-text {
@@ -11045,7 +11037,11 @@ img {
   overflow: hidden;
 }
 
-.userPic {
+.list-type {
+  list-style-type: disc;
+}
+
+.headshot {
   border-radius: 50%;
   height: 40px;
   width: 40px;
